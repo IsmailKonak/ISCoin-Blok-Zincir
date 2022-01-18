@@ -13,7 +13,7 @@ ISCoin, benim blok zincir ve kripto para dünyasını öğrenme sürecimde konuy
 ## Dosyalar ve İçerikleri
 <br />
 
-`MyCoin.py` : Blockchain ve kazım işlemleri ile ilgili fonksiyonları ve classları içerir.
+`Blockchain.py` : Blockchain ve kazım işlemleri ile ilgili fonksiyonları ve classları içerir.
 
 `Wallet.py` : Mining işlemi ve mining sonucunda kazıcının ödüllendirilmesi ile ilgili fonksiyonları ve class'ları içerir.
 
@@ -36,46 +36,51 @@ Kazıcı kaydımızı yapıp, bir kazıcı kimliği edinmek için bir defalığa
 
 ```bash
 
-    1) Mining ISCoin
-    2) Wallet operations
-    3) Blockchain operations
-    0) Quit
-    --- Which operation want you to do ?
-
+    1) Kazım yapmak
+    2) Cüzdan işlemleri
+    3) Blok zincir işlemleri                                             
+    0) Çık                                                                
+    --- Hangi işlemi gerçekleştirmek istiyorsunuz?                            
+            
                 --> 2
 ```
 
 Yeni kazıcı kaydı için 1. seçeneği seçiyoruz<br /><br />
 
 ```bash
- Wallet Operations
+ Cüzdan işlemleri
 
-        1) Add miner
-        2) Remove miner
-        3) Get miner information
-        4) Miners in database
-        0) Main Menu                                                                
-        --- Which operation want you to do ?                                      
+        1) Kazıcı ekle
+        2) Kazıcı çıkar
+        3) Kazıcı hakkında bilgi 
+        4) Veri tabanındaki kazıcılar
+        0) Ana menü                                                                
+        --- Hangi işlemi gerçekleştirmek istiyorsunuz?                            
+                
                     --> 1 
 ```
 
 Kazıcı kullanıcı adımızı giriyoruz, sistemin bize verdiği şifrelenmiş kimliği kaydediyoruz, bu kazıcı kimliğini kazım yaparken kullanacağız.
 
 ```bash
-Choose your username: IRONISM
+Kullanıcı adınızı seçiniz: IRONISM
 
-Your miner id is: a932734233079fd6faacb85f6b40f409924537be31897d8d264b942cdddf6ba1
-This miner id will allow you to mine ISCoin and make wallet operations, keep it safe.
+Kazıcı kullanıcı adınız: IRONISM
+Kazıcı kimlik numaranız: a932734233079fd6faacb85f6b40f409924537be31897d8d264b942cdddf6ba1
+Bu kazıcı kimlik numarası, ISCoin kazımı ve cüzdan işlemleri için gerekecek, kaybetmeyiniz.
 ```
 Buradan sonra ana menüye gidiyoruz ve Mining işlemi için bu sefer 1 seçeneği seçiyoruz
 
-    1) Mining ISCoin
-    2) Wallet operations
-    3) Blockchain operations                                             
-    0) Quit                                                                
-    --- Which operation want you to do ?                            
-                
+```bash
+
+    1) Kazım yapmak
+    2) Cüzdan işlemleri
+    3) Blok zincir işlemleri                                             
+    0) Çık                                                                
+    --- Hangi işlemi gerçekleştirmek istiyorsunuz?                            
+            
                 --> 1
+```
 
 Bu aşamada kazacağımız bloğun bilgilerini giriyoruz:
 > Kazıcı kimliğiniz: (Az önce aldığınız kazıcı kimliğini giriniz)
@@ -87,36 +92,36 @@ Bu aşamada kazacağımız bloğun bilgilerini giriyoruz:
 > iii) Quantity: (İstediğiniz bir rakam)
 
 ```bash
-Your miner ID: a932734233079fd6faacb85f6b40f409924537be31897d8d264b942cdddf6ba1
+Kazıcı kullanıcı adınız: a932734233079fd6faacb85f6b40f409924537be31897d8d264b942cdddf6ba1
 
 
- Block Data
+ Blok verisi
 
-   i) Sender: Blockchain
+   i) Gönderen: Blockchain
 
-   ii) Receiver:Ismail
+   ii) Alan: Ismail
 
-   iii) Quantity:6
+   iii) Miktar: 6
 ```
 Bı kısmı çalıştırdığınızda kazım işlemi başlayacaktır ve yaklaşık 30 saniye sonra bloğunuz blok zincire eklenecektir.
 
 ```bash
-**************** Mining process starts ********************* 
+**************** Kazım işlemi başladı ********************* 
  
 
 {'sender': 'il', 'receiver': 'il', 'quantity': 6}
 
-Try number: 586068
-Mining Succesfull !!! The current hash of the block is '00000267a6d4242d94860bbe306b8f70451fbf6d8e31ab6462280c60bd2f818f'
+Deneme sayısı: 586068
+Kazım başarılı !!! Kazılan bloğun hash'i: '00000267a6d4242d94860bbe306b8f70451fbf6d8e31ab6462280c60bd2f818f'
 
 
-Blockchain Height: 2
-Creater: Ismail Konak
+Blok zincir yüksekliği: 2
+Geliştirici: Ismail Konak
 
 
-Earned 31 ISCoin
-Duration: 24.823636293411255 sec
-**************** Mining process ended *********************
+3.14 ISCoin kazanıldı
+Kazım süresi: 24.823636293411255 sn
+**************** Kazım işlemi sonlandı *********************
 ```
 
 Bu kazım işlemi sonucunda cüzdanınıza sistem tarafından 5 ISCoin eklendi. Kazım işlemi 24 saniye sürdü, blok zincirimizin kazım sonrası uzunluğu 2 bloka çıktı.
@@ -129,12 +134,12 @@ Cüzdan işlemleri için arayüz üzerinden cüzdan işlemleri seçeneğini seç
 
 ```bash
 
-    1) Mining ISCoin
-    2) Wallet operations
-    3) Blockchain operations
-    0) Quit
-    --- Which operation want you to do ?
-
+    1) Kazım yapmak
+    2) Cüzdan işlemleri
+    3) Blok zincir işlemleri                                             
+    0) Çık                                                                
+    --- Hangi işlemi gerçekleştirmek istiyorsunuz?                            
+            
                 --> 2
 ```
 
@@ -148,14 +153,15 @@ Bu bölümde:
 > {4} Sistemde kayıtlı tüm kazıcıları görmek için tıklayınız
 
 ```bash
- Wallet Operations
+ Cüzdan işlemleri
 
-        1) Add miner
-        2) Remove miner
-        3) Get miner wallet
-        4) Miners in database
-        0) Main Menu                                                                
-        --- Which operation want you to do ?                                      
+        1) Kazıcı ekle
+        2) Kazıcı çıkar
+        3) Kazıcı hakkında bilgi 
+        4) Veri tabanındaki kazıcılar
+        0) Ana menü                                                                
+        --- Hangi işlemi gerçekleştirmek istiyorsunuz?                            
+                
                     -->
 ```
 <br />
@@ -167,12 +173,12 @@ Blok zincir sorgulaması için arayüz üzerinden "Blok zincir işlemleri" seçe
 
 ```bash
 
-    1) Mining ISCoin
-    2) Wallet operations
-    3) Blockchain operations
-    0) Quit
-    --- Which operation want you to do ?
-
+    1) Kazım yapmak
+    2) Cüzdan işlemleri
+    3) Blok zincir işlemleri                                             
+    0) Çık                                                                
+    --- Hangi işlemi gerçekleştirmek istiyorsunuz?                            
+            
                 --> 3
 ```
 Bu bölümde:
@@ -184,16 +190,16 @@ Bu bölümde:
 
 
 ```bash
-Blockchain Operations
+Blok zincir işlemleri
 
 
             
-            1) Blockchain information
-            2) Last block information
-            3) Block information
-            0) Main Menu                                                                
-            --- Which operation want you to do ?                            
-                        
+            1) Blok zincir hakkında bilgi
+            2) Son blok hakkında bilgi
+            3) Blok bilgisi
+            0) Ana menü                                                                
+            --- Hangi işlemi gerçekleştirmek istiyorsunuz?                            
+                    
                         --> 
 ```
 

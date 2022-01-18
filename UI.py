@@ -29,7 +29,7 @@ Run = True
 while Run:
     operation_mode= int(input("""
                  
-    1) ISCoin kazmak
+    1) Kazım yapmak
     2) Cüzdan işlemleri
     3) Blok zincir işlemleri                                             
     0) Çık                                                                
@@ -52,11 +52,11 @@ while Run:
         blockchain.mining(data,miner_id)
         e_time = time.time()
         
-        wallet.earn_coin(miner_id,31)
+        wallet.earn_coin(miner_id,3.14)
         print("\n")
         blockchain.info() 
         print("\n")
-        print("31 ISCoin kazanıldı")
+        print("3.14 ISCoin kazanıldı")
         print("Kazım süresi: "+str(e_time-b_time)+" sn")
         print("**************** Kazım işlemi sonlandı *********************")
         
