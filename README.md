@@ -13,7 +13,7 @@ ISCoin, benim blok zincir ve kripto para dünyasını öğrenme sürecimde konuy
 ## Dosyalar ve İçerikleri
 <br />
 
-`MyCoin.py` : Blockchain ve kazım işlemleri ile ilgili fonksiyonları ve classları içerir.
+`Blockchain.py` : Blockchain ve kazım işlemleri ile ilgili fonksiyonları ve classları içerir.
 
 `Wallet.py` : Mining işlemi ve mining sonucunda kazıcının ödüllendirilmesi ile ilgili fonksiyonları ve class'ları içerir.
 
